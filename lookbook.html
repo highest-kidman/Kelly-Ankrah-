@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook - LUXE Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-gem"></i>
+                <span>LUXE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="lookbook.html" class="nav-link active">Lookbook</a></li>
+                <li><a href="style-tips.html" class="nav-link">Style Tips</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Lookbook</h1>
+            <p>Explore our curated fashion collections and latest trends</p>
+        </div>
+    </section>
+
+    <!-- Filter Navigation -->
+    <section class="filter-nav">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="casual">Casual</button>
+                <button class="filter-btn" data-filter="formal">Formal</button>
+                <button class="filter-btn" data-filter="streetwear">Streetwear</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Gallery -->
+    <section class="lookbook-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Casual Items -->
+                <div class="gallery-item" data-category="casual">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Casual Chic">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Casual Chic</h3>
+                        <p>Effortless style for everyday elegance</p>
+                        <span class="price">$85 - $120</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="formal">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Evening Elegance">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Evening Elegance</h3>
+                        <p>Sophisticated pieces for special occasions</p>
+                        <span class="price">$180 - $350</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="streetwear">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Urban Street">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Urban Street</h3>
+                        <p>Bold and contemporary street fashion</p>
+                        <span class="price">$65 - $95</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="accessories">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Statement Accessories">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Statement Accessories</h3>
+                        <p>Perfect finishing touches for any outfit</p>
+                        <span class="price">$25 - $85</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="casual">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Weekend Comfort">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Weekend Comfort</h3>
+                        <p>Relaxed styles that don't compromise on fashion</p>
+                        <span class="price">$70 - $105</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="formal">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Business Professional">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Business Professional</h3>
+                        <p>Power dressing for the modern workplace</p>
+                        <span class="price">$150 - $280</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="streetwear">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Edgy Urban">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Edgy Urban</h3>
+                        <p>Attitude-driven pieces for the fashion-forward</p>
+                        <span class="price">$80 - $130</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="casual">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Boho Chic">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Boho Chic</h3>
+                        <p>Free-spirited fashion with artistic flair</p>
+                        <span class="price">$90 - $160</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="accessories">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Luxury Handbags">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Luxury Handbags</h3>
+                        <p>Timeless bags for every occasion</p>
+                        <span class="price">$120 - $450</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="formal">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Cocktail Attire">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Cocktail Attire</h3>
+                        <p>Glamorous pieces for evening events</p>
+                        <span class="price">$200 - $380</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="streetwear">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Athletic Luxe">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Athletic Luxe</h3>
+                        <p>High-performance meets high fashion</p>
+                        <span class="price">$75 - $140</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="accessories">
+                    <div class="item-image">
+                        <img src="https://images.pexels.com/photos/1445696/pexels-photo-1445696.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Statement Jewelry">
+                        <div class="item-overlay">
+                            <button class="view-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Statement Jewelry</h3>
+                        <p>Bold pieces to elevate any look</p>
+                        <span class="price">$35 - $150</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <span id="lightbox-price" class="price"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>LUXE</span>
+                    </div>
+                    <p>Elevating style through carefully curated fashion collections that celebrate individuality and timeless elegance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="style-tips.html">Style Tips</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@luxefashion.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, NYC</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LUXE Fashion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

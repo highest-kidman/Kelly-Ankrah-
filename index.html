@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE Fashion - Premium Style Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-gem"></i>
+                <span>LUXE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+                <li><a href="style-tips.html" class="nav-link">Style Tips</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop " alt="Fashion Model">
+                <div class="slide-content">
+                    <h1>Elevate Your Style</h1>
+                    <p>Discover the latest in premium fashion and timeless elegance</p>
+                    <button class="cta-button">Shop Collection</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Fashion Style">
+                <div class="slide-content">
+                    <h1>Luxury Redefined</h1>
+                    <p>Where sophistication meets contemporary design</p>
+                    <button class="cta-button">Explore Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Fashion Accessories">
+                <div class="slide-content">
+                    <h1>Timeless Beauty</h1>
+                    <p>Curated pieces for the modern fashion enthusiast</p>
+                    <button class="cta-button">View Trends</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide-nav">
+            <button class="prev-btn" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slide-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h2>Welcome to LUXE Fashion</h2>
+                <p>At LUXE, we believe fashion is an art form that reflects your unique personality. Our carefully curated collection brings together the finest designers and emerging talents to offer you pieces that are both timeless and contemporary.</p>
+                <p>From everyday essentials to statement pieces, we're here to help you express your authentic self through the power of style.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Trends -->
+    <section class="featured-trends">
+        <div class="container">
+            <h2 class="section-title">Featured Trends</h2>
+            <div class="trends-grid">
+                <div class="trend-card">
+                    <div class="trend-image">
+                        <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Minimalist Chic">
+                    </div>
+                    <div class="trend-content">
+                        <h3>Minimalist Chic</h3>
+                        <p>Clean lines and sophisticated silhouettes define this season's minimalist trend. Embrace the beauty of simplicity with carefully tailored pieces that make a subtle yet powerful statement.</p>
+                        <a href="lookbook.html" class="trend-link">Explore Collection</a>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-image">
+                        <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Bold Statements">
+                    </div>
+                    <div class="trend-content">
+                        <h3>Bold Statements</h3>
+                        <p>Make an impact with vibrant colors and striking patterns. This trend celebrates confidence and creativity, perfect for those who aren't afraid to stand out from the crowd.</p>
+                        <a href="lookbook.html" class="trend-link">Shop Now</a>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-image">
+                        <img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Classic Elegance">
+                    </div>
+                    <div class="trend-content">
+                        <h3>Classic Elegance</h3>
+                        <p>Timeless pieces that never go out of style. Our classic collection features refined designs that transition seamlessly from day to night, perfect for the modern professional.</p>
+                        <a href="lookbook.html" class="trend-link">View Styles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay in Style</h2>
+                <p>Be the first to know about new collections, exclusive offers, and style tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>LUXE</span>
+                    </div>
+                    <p>Elevating style through carefully curated fashion collections that celebrate individuality and timeless elegance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="style-tips.html">Style Tips</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@luxefashion.com</p>
+                        <p><i class="fas fa-phone"></i>+233 (533)233 838</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Ave, Accra</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LUXE Fashion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
